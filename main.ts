@@ -30,7 +30,7 @@ input.onButtonPressed(Button.AB, function () {
     if (Dé1 == 0) {
         basic.showIcon(IconNames.Angry)
     }
-    if (Dé2) {
+    if (Dé2 == 0) {
         basic.showIcon(IconNames.Sad)
     } else {
         Somme = Dé1 + Dé2
