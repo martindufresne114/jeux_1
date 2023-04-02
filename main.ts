@@ -35,11 +35,11 @@ input.onButtonPressed(Button.AB, function () {
     } else {
         Somme = Dé1 + Dé2
         if (Prédiction > Somme) {
-            basic.showString("Tu perds TOUT")
+            basic.showString("Tu perds mise de (" + ("" + Mise + "$)"))
         } else if (Prédiction < Somme) {
-            basic.showString("Récupère ta mise")
+            basic.showString("Récupère mise de (" + Mise + "$)")
         } else {
-            basic.showString("Gros lot !")
+            basic.showString("Bravo! " + ("Réclame " + (Mise + Prédiction) + "$"))
         }
     }
 })
