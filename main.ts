@@ -7,14 +7,6 @@ input.onButtonPressed(Button.A, function () {
     Mise += 1
     basic.showNumber(Mise)
 })
-input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    Mise = 0
-    Prédiction = 0
-    Dé1 = 0
-    Dé2 = 0
-    Somme = 0
-    basic.showString("Debut")
-})
 input.onButtonPressed(Button.AB, function () {
     if (Mise == 0) {
         basic.showIcon(IconNames.Sad)
@@ -35,7 +27,7 @@ input.onButtonPressed(Button.AB, function () {
         if (Prédiction > Somme) {
             basic.showString("Tu perds mise de " + ("" + Mise + "$"))
         } else if (Prédiction < Somme) {
-            basic.showString("Récupere mise de " + Mise + "$")
+            basic.showString("Recupere mise de " + Mise + "$")
         } else {
             basic.showString("Bravo! " + ("Reclame " + (Mise + Prédiction) + "$"))
         }
